@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const { Schema } = mongoose;
 
-const userSchema = mongoose.Schema({
+const userSchema = new Schema({
     name: {
         required: true,
         type: String,
@@ -26,7 +27,7 @@ const userSchema = mongoose.Schema({
         type: String,
     },
     address: {
-        type: true,
+        type: String,
         default: "",
     },
     type: {

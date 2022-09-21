@@ -7,6 +7,7 @@ const app = express();
 const DB = "mongodb+srv://sj15:Sourav6996@cluster0.i4msquv.mongodb.net/?retryWrites=true&w=majority";
 
 //Middleware
+app.use(express.json());
 app.use(authRouter);
 
 //Connections
